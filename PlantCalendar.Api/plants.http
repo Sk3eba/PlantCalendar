@@ -1,0 +1,23 @@
+GET http://localhost:5251/plants
+
+###
+GET http://localhost:5251/plants/4
+
+###
+POST http://localhost:5251/plants
+Content-Type: application/json
+
+{
+    "name": "Stokrotka"
+}
+
+###
+PUT http://localhost:5251/plants/7
+Content-Type: application/json
+
+{
+    "name": "Róża"
+}
+
+###
+DELETE http://localhost:5251/plants/5
