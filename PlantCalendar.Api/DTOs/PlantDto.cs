@@ -1,6 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace PlantCalendar.Api.DTOs;
 
 public record PlantDto(
     int Id,
-    string Name
+    [Required][StringLength(50)] string Name
 );

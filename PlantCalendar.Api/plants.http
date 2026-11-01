@@ -8,7 +8,7 @@ POST http://localhost:5251/plants
 Content-Type: application/json
 
 {
-    "name": "Stokrotka"
+    "name": ""
 }
 
 ###

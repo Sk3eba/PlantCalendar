@@ -29,7 +29,7 @@ public static class PlantsEndpoints
 
         // POST /plants
         group.MapPost("/", (CreatePlantDto newPlant) =>
-        {
+        {   
             int nextId = plants.Any() ? plants.Max(p => p.Id) + 1 : 1;
 
             PlantDto plant = new(
