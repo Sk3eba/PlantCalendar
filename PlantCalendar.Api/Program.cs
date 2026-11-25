@@ -9,6 +9,7 @@ builder.AddPlantCalendarDb();
 var app = builder.Build();
 
 app.MapGamesEndpoints();
+app.MapSpeciesEndpoints();
 
 app.MigrateDb();
 

@@ -14,7 +14,7 @@ public static class DataExtensions
 
     public static void AddPlantCalendarDb(this WebApplicationBuilder builder)
     {
-        var connString = "Data Source=PlantCalendar.db";
+        var connString = builder.Configuration.GetConnectionString("PlantCalendar");
         builder.Services.AddSqlite<PlantCalendarContext>(
             connString,
             optionsAction: options => options.UseSeeding((context, _) =>
